@@ -58,5 +58,9 @@ public class LoginBean {
 			return null;
 		}
 	}
+	// bug#1234
+	public boolean isOK() {
+		return true;
+	}
 
 }
