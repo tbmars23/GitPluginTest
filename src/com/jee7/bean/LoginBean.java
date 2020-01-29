@@ -10,6 +10,7 @@ public class LoginBean {
 	private int id;
 	private String userName;
 	private String password;
+	private String email;
 	private String errorMsg;
 	
 	
@@ -31,12 +32,20 @@ public class LoginBean {
 	public void setErrorMsg(String errorMsg) {
 		this.errorMsg = errorMsg;
 	}
-	
+	// id
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
+	}
+	
+	// add email
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	
 	public String validate()
