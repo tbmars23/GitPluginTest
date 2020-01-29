@@ -7,9 +7,11 @@ import javax.faces.bean.RequestScoped;
 @RequestScoped
 public class LoginBean {
 	
+	private int id;
 	private String userName;
 	private String password;
 	private String errorMsg;
+	
 	
 	public String getUserName() {
 		return userName;
@@ -29,6 +31,14 @@ public class LoginBean {
 	public void setErrorMsg(String errorMsg) {
 		this.errorMsg = errorMsg;
 	}
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	
 	public String validate()
 	{
 		if ("admin".equals(userName) && "admin".equals(password)) {
